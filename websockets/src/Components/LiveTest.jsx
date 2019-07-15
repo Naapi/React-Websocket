@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import { Table } from 'reactstrap';
 
+
+
+
 class LiveTest extends Component {
 
 state = {
@@ -8,7 +11,7 @@ state = {
         {
             firstname:"Matti",
             lastname:"Meikäläinen",
-            username:"xxMatixx"
+            username:"theMatti"
         }
     ]
 }
@@ -18,7 +21,7 @@ renderTable = () => {
     return visitors.map((v, index) => {
         return (
             <tr>
-                <td>{index}</td>
+                <td>{index + 1}</td>
                 <td>{v.firstname}</td>
                 <td>{v.lastname}</td>
                 <td>{v.username}</td>
